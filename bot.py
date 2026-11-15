@@ -32,12 +32,8 @@ from tariffs_by import (
     DOOR_SERVICE_PRICE,
 )
 
-# 1. Вставьте сюда токен от @BotFather
-BOT_TOKEN = os.getenv("BOT_TOKEN", "9020135969:AAFRkInsAmdEm_Z5cKNsQt3nBh8gnpw5igg")
-
-# 2. (Необязательно) Ваш Telegram ID или ID группы менеджеров, куда будут падать заявки.
-# Узнать свой ID можно в боте @userinfobot
-MANAGER_CHAT_ID = os.getenv("MANAGER_CHAT_ID", "1073832555")
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+MANAGER_CHAT_ID = os.getenv("MANAGER_CHAT_ID", "ID")
 
 router = Router()
 
